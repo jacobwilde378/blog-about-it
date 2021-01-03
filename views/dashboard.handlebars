@@ -1,0 +1,18 @@
+<form class="new-post-form">
+    <h6>Create Your Next Master Piece</h2>
+    <div class="form-group">
+        <input type="text" class="form-control" id="title-new" name="title-detail" placeholder = "New Title">
+        <textarea class="form-control" name="blog-detail" id="blog-new" cols="30" rows="10" placeholder = "Blog Contents"></textarea>
+        <button type="submit" class="btn btn-success">Create Post!</button>
+    </div>
+</form>
+<div>
+    <h6>Previous Work</h6>
+    <div class="blog-post-list">
+        {{#each posts as |post|}}
+        {{> post-dashboard post }}
+        {{/each}}
+    </div>
+</div>
+
+<script src="/javascript/dashboard.js"></script>

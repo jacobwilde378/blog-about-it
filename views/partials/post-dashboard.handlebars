@@ -1,0 +1,16 @@
+<article>
+    <div class="row">
+        <div class="col-5">
+            <a href="/api/posts/{{id}}" class="col-4">{{title}}</a>
+        </div>
+        <div class="col">
+            Created: {{format_date created_at}}
+        </div>
+        <div class="col">
+            <a href="/api/posts/edit/{{id}}">Edit</a>
+        </div>
+        <form class="post col" id={{id}}>
+            <button type="submit" class="btn btn-link">Delete</button>
+        </form>
+    </div>
+</article>
