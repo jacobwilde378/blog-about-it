@@ -69,8 +69,13 @@ router.get('/', (req, res) => {
       .then(dbPostData => {
         console.log(dbPostData)
         const post = dbPostData.get({ plain: true })
-        console.log(post)
-        res.render('edit-post', { post, loggedIn: true })
+        if(req.session.loggedIn) {
+          var my_status = true
+        }
+        else {
+          var my_status = false
+        }
+        res.render('edit-post', { post, my_status })
       })
       .catch(err => {
         console.log(err);

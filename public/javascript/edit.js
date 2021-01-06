@@ -22,5 +22,5 @@ async function editPostFunction(event) {
     }
   }
   
-  document.querySelector('.post').addEventListener('submit', editPostFunction);
+  document.querySelector('.post-details').addEventListener('submit', editPostFunction);
   

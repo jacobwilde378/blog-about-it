@@ -16,7 +16,7 @@ Post.init(
         allowNull: false
       },
       blog_text: {
-        type: DataTypes.STRING,
+        type: DataTypes.BLOB('long'),
         allownull: false
       },
       user_id: {

@@ -1,0 +1,86 @@
+:root {
+    --primary: #dce1e3;
+    --secondary: #004E7C;
+    --tertiary: #004e7c;
+}
+* {
+    background-color: var(--primary);
+    color: var(--secondary)
+}
+
+input {
+    background-color: var(--white);
+}
+
+.my-text-area {
+    background-color: var(--white);
+
+}
+.my-input {
+    background-color: var(--white);
+}
+
+button {
+    background-color: var(--secondary);
+    color: var(--white);
+    border: 5px;
+    border-radius: 5px;
+    border-color: var(--white);
+    max-width: 200px;
+}
+.comments {
+    background-color: var(--white);
+    padding: 20px;
+}
+
+.post-details {
+    background-color: var(--white);
+    padding: 20px;
+}
+
+p {
+    background-color: var(--white);
+    color:  var(--secondary)
+}
+
+h1 {
+    color: var(--secondary);
+}
+
+h3 {
+    color: var(--secondary);
+    background-color: var(--white);
+}
+
+h4 {
+    color: var(--secondary);
+    background-color: var(--white);
+}
+
+.card {
+    border: 5px;
+    border-radius: 15;
+    border-color: var(--secondary);
+}
+
+.card-header {
+    background-color: var(--secondary);
+    color: var(--white)
+}
+
+.card-header a {
+    color: var(--white)
+}
+
+.card-footer {
+    background-color: var(--white);
+    color: var(--secondary)
+}
+
+small {
+    background-color: var(--white);
+}
+
+.my-container {
+    margin: 30px;
+}

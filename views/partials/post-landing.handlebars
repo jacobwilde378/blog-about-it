@@ -1,6 +1,10 @@
-<article class="post">
-    <div class="row">
-        <a href="/api/posts/{{id}}" class="col-6">{{title}}</a>
-        <div class="">Created by: {{user.username}} on {{format_date created_at}}</div>
-    </div>
-</article>
+<div class="my-container">
+<div class="card">
+  <div class="card-header">
+    <a href="/api/posts/{{id}}" class="card-text">{{title}}</a>
+  </div>
+  <div class="card-footer">
+    <small class="text-muted">Created by: {{user.username}} on {{format_date created_at}}</small>
+  </div>
+</div>
+</div>

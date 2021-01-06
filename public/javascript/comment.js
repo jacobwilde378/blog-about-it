@@ -1,9 +1,11 @@
 const commentFormHandler = async function(event) {
     event.preventDefault();
   
-    const post_id = document.querySelector('input[name="post-id"]').value;
-    const comment_text = document.querySelector('textarea[name="comment-body"]').value;
-  
+    const post_id = document.querySelector('.post-details').id;
+    const comment_text = document.querySelector('textarea').value;
+    console.log(post_id)
+    console.log(comment_text)  
+
     if (comment_text) {
       await fetch('/api/comments', {
         method: 'POST',
@@ -21,5 +23,4 @@ const commentFormHandler = async function(event) {
   };
   
   document
-    .querySelector('#new-comment-form')
-    .addEventListener('submit', commentFormHandler);
+    .querySelector('#new-comment-form').addEventListener('submit', commentFormHandler);

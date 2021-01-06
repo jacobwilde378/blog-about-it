@@ -1,12 +1,12 @@
-<article class="post">
-    <form class="container">
+<div class="post-details" id="{{id}}">
+    <form>
         <input type="text" class="" id="{{id}}" name="edit-title" value="{{title}}">
         <br>
-        <textarea class="" name="edit-text" id="" cols="30" rows="10">{{blog_text}}</textarea>
+        <textarea class="my-text-area" name="edit-text" id="" cols="100" rows="10">{{blog_text}}</textarea>
         <br>
-        <button type="submit" class="btn btn-success">Update</button>
+        <button type="submit">Update</button>
         <p>Created: {{format_date created_at}}</p>
 
     </form>
-</article>
+</div>
 <script src="/javascript/edit.js"></script>

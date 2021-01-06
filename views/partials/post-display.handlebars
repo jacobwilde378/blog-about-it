@@ -1,9 +1,7 @@
-<article class="post">
-        <div class="container">
-            <h4>{{title}}</h4>
-            <br>
-            <p>{{blog_text}}</p>
-            <br>
-            <p>Created: {{format_date created_at}}</p>
-        </div>
-</article>
+<div class="post-details" id="{{id}}">
+    <h4>{{title}}</h4>
+    <br>
+    <p>{{blog_text}}</p>
+    <br>
+    <p>Created: {{format_date created_at}} by {{user.username}}</p>
+</div>
